@@ -4,6 +4,28 @@
 </head>
 
 <style>
+  @keyframes fade-out-in {
+    0% {
+      opacity: 2;
+    }
+    
+    25% {
+      opacity: 1;
+    }
+    
+    50% {
+      opacity: 0.5;
+    }
+    
+    75% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 2;
+    }
+  }
+  
   body{
     margin: 0;
     padding: 0;
@@ -24,6 +46,7 @@
     background-size: 200% 200%;
     position: absolute;
     background-blend-mode: multiply;
+    animation: fade-out-in 12s linear infinite
   }
   
 </style>
